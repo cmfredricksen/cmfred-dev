@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400&family=Montserrat&family=Roboto+Mono:wght@300;400&family=Source+Sans+Pro&display=swap');
+
+:root {
+	--font-heading: 'Montserrat', sans-serif;
+	--font-accent: 'Dongle', sans-serif;
+	--font-text: 'Sans Source Pro', sans-serif;
+	--font-link: 'Roboto Mono', monospace;
+}
+
+h1,
+h2 {
+	font-family: var(--font-heading);
+}
+
+h3,
+h4,
+h5 {
+	font-family: var(--font-accent);
+}
+
+p {
+	font-family: var(--font-text);
+}
+
+a {
+	font-family: var(--font-link);
+}
