@@ -5,6 +5,15 @@
 	--font-accent: 'Dongle', sans-serif;
 	--font-text: 'Sans Source Pro', sans-serif;
 	--font-link: 'Roboto Mono', monospace;
+
+	--clr-primary-dark: #470147;
+	--clr-primary-dark-transparent: #470147aa;
+	--clr-secondary-light: #a05ce0;
+}
+
+body {
+	background-color: #470147;
+	color: palegoldenrod;
 }
 
 h1,
@@ -24,4 +33,11 @@ p {
 
 a {
 	font-family: var(--font-link);
+	text-decoration: none;
+	color: #a05ce0;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #551a8b;
 }
