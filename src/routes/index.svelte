@@ -1,44 +1,46 @@
+<script>
+	import Card from '$lib/components/card.svelte';
+
+	export let cards = [
+		{
+			title: 'Creative Solutions',
+			icon: '&hearts;',
+			list: [
+				'Professional Graphic Design',
+				'Quality Websites Built for Your Business',
+				'Worry Free Site Maintenance'
+			],
+			link: 'services'
+		},
+		{
+			title: 'High Quality Work',
+			icon: '&diams;',
+			list: ['Attention to Detail', 'Search Engine Optimization', 'Website Backups and Updates'],
+			link: 'contact'
+		}
+	];
+</script>
+
 <svelte:head>
 	<title>Chris F. Dev | Home</title>
 </svelte:head>
 <div class="main">
-	<h3>Great Design</h3>
+	<h3>Custom Web Solutions Tailored for Your Needs!</h3>
 
 	<p>
-		Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptas, id, magnam eius
-		provident assumenda voluptates fugiat nihil deserunt, reiciendis ut illo. Mollitia voluptatibus
-		commodi, quaerat sequi optio veniam repudiandae adipisci voluptatum assumenda accusamus numquam
-		in facilis! Laboriosam quo vero quaerat adipisci, doloremque nisi voluptate ex enim deserunt
-		molestias expedita voluptatem esse a dolorem consequatur veniam earum provident id tenetur error
-		aspernatur, accusantium cumque pariatur. Repellat, odit eaque? Iure debitis deleniti veritatis
-		sit minima libero vero iusto iste, assumenda quas nisi tempora ipsum voluptas ullam
-		reprehenderit nostrum explicabo cupiditate asperiores eum quasi quisquam quod officiis
-		temporibus. Nesciunt odit ut accusantium.
+		You have plenty to do, let me take care of your website. I will plan, design, build, deploy and
+		maintain your web presence so you can focus on running your primary business. Each website is
+		custom built with attention to detail and an eye on quality. I have years of experience building
+		websites using different technologies and platforms. I will handle the details so you don't have
+		to.
 	</p>
 	<!-- <img src="/static/images/pexels-castorly-stock-4065748.jpg" alt="" /> -->
 	<div class="img-div" />
-	<p>
-		Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptas, id, magnam eius
-		provident assumenda voluptates fugiat nihil deserunt, reiciendis ut illo. Mollitia voluptatibus
-		commodi, quaerat sequi optio veniam repudiandae adipisci voluptatum assumenda accusamus numquam
-		in facilis! Laboriosam quo vero quaerat adipisci, doloremque nisi voluptate ex enim deserunt
-		molestias expedita voluptatem esse a dolorem consequatur veniam earum provident id tenetur error
-		aspernatur, accusantium cumque pariatur. Repellat, odit eaque? Iure debitis deleniti veritatis
-		sit minima libero vero iusto iste, assumenda quas nisi tempora ipsum voluptas ullam
-		reprehenderit nostrum explicabo cupiditate asperiores eum quasi quisquam quod officiis
-		temporibus. Nesciunt odit ut accusantium.
-	</p>
-	<p>
-		Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptas, id, magnam eius
-		provident assumenda voluptates fugiat nihil deserunt, reiciendis ut illo. Mollitia voluptatibus
-		commodi, quaerat sequi optio veniam repudiandae adipisci voluptatum assumenda accusamus numquam
-		in facilis! Laboriosam quo vero quaerat adipisci, doloremque nisi voluptate ex enim deserunt
-		molestias expedita voluptatem esse a dolorem consequatur veniam earum provident id tenetur error
-		aspernatur, accusantium cumque pariatur. Repellat, odit eaque? Iure debitis deleniti veritatis
-		sit minima libero vero iusto iste, assumenda quas nisi tempora ipsum voluptas ullam
-		reprehenderit nostrum explicabo cupiditate asperiores eum quasi quisquam quod officiis
-		temporibus. Nesciunt odit ut accusantium.
-	</p>
+
+	{#each cards as card}
+		<Card {...card} />
+		<!-- {card.title}{card.icon}{card.link} -->
+	{/each}
 </div>
 
 <style>
@@ -52,7 +54,6 @@
 
 	p {
 		margin: 0.5rem 0 2rem;
-		text-indent: 1rem;
 		line-height: 1.3;
 	}
 
