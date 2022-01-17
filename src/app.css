@@ -6,14 +6,24 @@
 	--font-text: 'Sans Source Pro', sans-serif;
 	--font-link: 'Roboto Mono', monospace;
 
-	--clr-primary-dark: #470147;
-	--clr-primary-dark-transparent: #470147aa;
-	--clr-secondary-light: #a05ce0;
+	--clr-primary-dark: #240024;
+	--clr-primary-dark-transparent: #240024cc;
+	--clr-primary-light: #eee8aa;
+	--clr-accent: #c9b6da;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-	background-color: #470147;
-	color: palegoldenrod;
+	background-color: var(--clr-primary-dark);
+	color: var(--clr-primary-light);
+	background-image: url('/static/pexels-pixabay-459301.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
 }
 
 h1,
@@ -34,10 +44,9 @@ p {
 a {
 	font-family: var(--font-link);
 	text-decoration: none;
-	color: #a05ce0;
+	color: var(--clr-accent);
 }
 
 a:hover {
 	text-decoration: underline;
-	color: #551a8b;
 }

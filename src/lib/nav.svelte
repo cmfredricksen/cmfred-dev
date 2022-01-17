@@ -1,6 +1,36 @@
+<script lang="ts">
+	const links = [
+		{
+			name: 'Home',
+			href: '/'
+		},
+		{
+			name: 'About',
+			href: '/about'
+		},
+		{
+			name: 'WebFolio',
+			href: 'https://webfolio-cmfredricksen.netlify.app'
+		},
+		{
+			name: 'Services',
+			href: '/services'
+		},
+		{
+			name: 'Contact',
+			href: '/contact'
+		}
+	];
+</script>
+
 <nav>
-	<a href="/">Home</a>
-	<a href="/about">About Us</a>
-	<a href="/services">Services Offered</a>
-	<a href="/contact">Contact Us</a>
+	{#each links as link}
+		<a href={link.href}>{link.name}</a>
+	{/each}
 </nav>
+
+<style>
+	a {
+		margin: 0 0.5rem;
+	}
+</style>
