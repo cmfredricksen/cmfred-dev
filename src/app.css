@@ -8,9 +8,9 @@
 
 	--clr-primary-dark: #033750;
 	--clr-primary-dark-transparent: #033750cc;
-	/* --clr-primary-light: #fff; */
 	--clr-text: #fff;
 	--clr-accent: #c9b6da;
+	--clr-accent-pink: #f01c7f;
 }
 
 * {
@@ -20,12 +20,12 @@
 }
 
 body {
-	background-color: var(--clr-primary-dark);
+	background-color: var(--clr-primary-transparent);
 	color: var(--clr-accent);
 	color: var(--clr-text);
 	background-image: url('/static/images/pexels-pixabay-220182.jpg');
 	background-size: 100%;
-	background-repeat: no-repeat;
+	background-repeat: repeat-y;
 }
 
 h1,
@@ -38,8 +38,9 @@ h3,
 h4,
 h5 {
 	font-family: var(--font-accent);
-	color: #1cf0a9;
-	font-size: 1.5rem;
+	color: #f01c7f;
+	font-size: 2rem;
+	font-weight: 500;
 }
 
 p {
@@ -53,5 +54,12 @@ a {
 }
 
 a:hover {
-	text-decoration: underline;
+	/* text-decoration: underline; */
+	color: #f01c7f;
+}
+
+img {
+	height: 200px;
+	/* overflow: hidden; */
+	object-fit: cover;
 }
