@@ -1,10 +1,10 @@
-<script>
+<script lang="ts">
 	import Card from '$lib/components/card.svelte';
 
 	export let cards = [
 		{
 			title: 'Creative Solutions',
-			icon: '&hearts;',
+			icon: '♥',
 			list: [
 				'Professional Graphic Design',
 				'Quality Websites Built for Your Business',
@@ -14,7 +14,7 @@
 		},
 		{
 			title: 'High Quality Work',
-			icon: '&diams;',
+			icon: '♦',
 			list: ['Attention to Detail', 'Search Engine Optimization', 'Website Backups and Updates'],
 			link: 'contact'
 		}

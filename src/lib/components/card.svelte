@@ -1,13 +1,13 @@
-<script>
-	export let title;
-	export let icon;
-	export let list;
-	export let link;
+<script lang="ts">
+	export let title: string;
+	export let icon: string;
+	export let list: string[];
+	export let link: string;
 </script>
 
 <div class="card">
 	<h2>{title}</h2>
-	<h2>&#9729;{icon}</h2>
+	<h1>{icon}</h1>
 
 	<ul>
 		{#each list as item}
