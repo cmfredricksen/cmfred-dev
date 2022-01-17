@@ -6,9 +6,10 @@
 	--font-text: 'Sans Source Pro', sans-serif;
 	--font-link: 'Roboto Mono', monospace;
 
-	--clr-primary-dark: #240024;
-	--clr-primary-dark-transparent: #240024cc;
-	--clr-primary-light: #eee8aa;
+	--clr-primary-dark: #033750;
+	--clr-primary-dark-transparent: #033750cc;
+	/* --clr-primary-light: #fff; */
+	--clr-text: #fff;
 	--clr-accent: #c9b6da;
 }
 
@@ -20,8 +21,9 @@
 
 body {
 	background-color: var(--clr-primary-dark);
-	color: var(--clr-primary-light);
-	background-image: url('/static/pexels-pixabay-459301.jpg');
+	color: var(--clr-accent);
+	color: var(--clr-text);
+	background-image: url('/static/images/pexels-pixabay-220182.jpg');
 	background-size: 100%;
 	background-repeat: no-repeat;
 }
@@ -29,12 +31,15 @@ body {
 h1,
 h2 {
 	font-family: var(--font-heading);
+	color: var(--clr-accent);
 }
 
 h3,
 h4,
 h5 {
 	font-family: var(--font-accent);
+	color: #1cf0a9;
+	font-size: 1.5rem;
 }
 
 p {

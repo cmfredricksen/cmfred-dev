@@ -4,12 +4,12 @@
 
 <style>
 	footer {
-		background-color: var(--clr-primary-dark);
 		background: linear-gradient(var(--clr-primary-dark-transparent), var(--clr-primary-dark));
 		padding: 2rem;
 		text-align: center;
 		max-width: 90%;
 		margin: 0 auto;
+		color: var(--clr-accent);
 	}
 	p {
 		font-family: var(--font-accent);

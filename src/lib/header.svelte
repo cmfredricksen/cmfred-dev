@@ -21,6 +21,7 @@
 	}
 	.icon {
 		color: var(--clr-accent);
+
 		font-size: 3rem;
 		margin: 0;
 		margin-block-start: 0;

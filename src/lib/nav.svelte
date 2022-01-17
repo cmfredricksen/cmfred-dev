@@ -10,7 +10,8 @@
 		},
 		{
 			name: 'WebFolio',
-			href: 'https://webfolio-cmfredricksen.netlify.app'
+			href: 'https://webfolio-cmfredricksen.netlify.app',
+			target: '_blank'
 		},
 		{
 			name: 'Services',
@@ -25,7 +26,7 @@
 
 <nav>
 	{#each links as link}
-		<a href={link.href}>{link.name}</a>
+		<a href={link.href} target={link.target}>{link.name}</a>
 	{/each}
 </nav>
 
