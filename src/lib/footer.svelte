@@ -5,7 +5,7 @@
 <style>
 	footer {
 		background: linear-gradient(var(--clr-primary-dark-transparent), var(--clr-primary-dark));
-		/* padding: 2rem 1.5rem 1rem; */
+		padding: 1rem 1.5rem 1rem;
 		text-align: center;
 		max-width: 90vw;
 		margin: 0 auto 0;
