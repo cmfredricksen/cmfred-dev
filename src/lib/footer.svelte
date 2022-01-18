@@ -1,5 +1,5 @@
 <footer>
-	<p>&copy; 2022 <a href="/">Chris Fredricksen</a> &middot; All Rights Reserved &#9813;</p>
+	<p>&copy; 2022 <a href="/#top">Chris Fredricksen</a> &middot; All Rights Reserved &#9813;</p>
 </footer>
 
 <style>
