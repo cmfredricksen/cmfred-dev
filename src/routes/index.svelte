@@ -5,13 +5,17 @@
 		{
 			title: 'Creative Solutions',
 			icon: '♥',
-			list: ['Professional Graphic Design', 'Custom Built for You', 'Worry Free Site Maintenance'],
+			list: ['Professional Graphic Design', 'Custom Built for You', 'Attention to Detail'],
 			link: 'services'
 		},
 		{
 			title: 'High Quality Work',
 			icon: '♦',
-			list: ['Attention to Detail', 'Search Engine Optimization', 'Website Backups and Updates'],
+			list: [
+				'Search Engine Optimization',
+				'Website Backups and Updates',
+				'Worry Free Site Maintenance'
+			],
 			link: 'contact'
 		}
 	];
@@ -26,21 +30,32 @@
 	<p class="intro-text">
 		You have plenty to do, let me take care of your website. I will plan, design, build, deploy and
 		maintain your website so you can focus on running your primary business. Each website is custom
-		built with attention to detail and an eye on quality. I have years of experience building
-		websites using different technologies and platforms. I will handle the details so you don't have
-		to.
+		built with attention to detail and an eye on quality. I will handle the details so you don't
+		have to.
 	</p>
-	<div class="img-div" />
+
 	<p class="body-text">
-		Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum non voluptate adipisci maiores
-		officiis voluptas tempore pariatur voluptates, alias libero aspernatur necessitatibus? Quidem,
-		aliquam! Totam voluptates repudiandae eos nulla. Accusantium excepturi molestiae nisi odit,
-		dolorum quae explicabo, qui omnis impedit sint ab sunt placeat suscipit itaque. Adipisci quo
-		totam nihil deleniti repellendus inventore provident veniam asperiores! Nesciunt, reprehenderit
-		laborum praesentium temporibus, mollitia velit voluptas magnam a, dolorum aliquid id ipsum
-		pariatur natus illo totam blanditiis veritatis sequi dignissimos atque fuga? Quas autem ipsum ut
-		eaque voluptas blanditiis quibusdam temporibus, tempore, nobis, quisquam reprehenderit! Suscipit
-		eos harum, error aspernatur minima cumque.
+		Having a website is a great way for your clients to find you, get in touch with you, and keep up
+		with your latest work. It is also a wonderful way for you to find more clients as your website
+		is available 24 hours a day, 7 days a week, holidays included! It is your piece of real estate
+		on the web. It lets people know you are there, and what services and/or products you provide.
+	</p>
+
+	<div class="img-div">
+		<div class="icon-bar">
+			<i class="material-icons-outlined">terminal</i>
+			<i class="material-icons-outlined">store</i>
+			<i class="material-icons-outlined">rocket_launch</i>
+			<i class="material-icons-outlined">computer</i>
+			<i class="material-icons-outlined">desktop_windows</i>
+		</div>
+	</div>
+
+	<p class="body-text">
+		I specialize in small businesses and solo entrepeneurs who are looking for a unique, custom
+		built website that reflects their core message and values. I use the best techniques to ensure
+		your website will load quickly and work smoothly for your visitors, whether they are using a
+		computer, a tablet or a smart phone.
 	</p>
 
 	<div class="card-container">
@@ -65,33 +80,44 @@
 	}
 
 	.intro-text {
-		font-size: 1.5rem;
+		font-size: 1.25rem;
 		font-style: oblique;
 	}
+
+	.icon-bar {
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		background-color: var(--clr-primary-dark-transparent);
+		padding: 2rem 0.5rem;
+		border: 1px solid var(--clr-accent);
+		border-radius: 0.5rem;
+	}
+
+	.icon-bar i {
+		font-size: 4rem;
+		/* color: var(--clr-accent-pink); */
+	}
 	.body-text {
-		columns: 2;
-		column-gap: 2rem;
-		text-align: justify;
+		/* columns: 2; */
+		/* column-gap: 2rem; */
+		/* text-align: justify; */
 		font-size: 1.25rem;
 		margin: 2rem 0;
-		padding: 2rem 0;
+		/* padding: 2rem 0; */
 	}
 
 	.img-div {
-		background: linear-gradient(
-				var(--clr-primary-dark-transparent-33),
-				var(--clr-primary-dark-transparent-33)
-			),
-			url('/static/images/pexels-castorly-stock-4065748.jpg');
+		background-image: url('/static/images/pexels-castorly-stock-4065748.jpg');
 		background-repeat: no-repeat;
-		display: block;
+		display: flex;
 		height: 150px;
 		background-size: 100%;
 		background-position-x: left;
 		background-position-y: center;
-		border-radius: 1rem;
-		border: 2px solid var(--clr-primary-dark);
-		outline: thick double var(--clr-accent-pink);
+		border-radius: 0.5rem;
 		margin: 0 auto 2rem;
 		width: 90%;
 	}

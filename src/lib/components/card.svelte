@@ -23,7 +23,6 @@
 <style>
 	.card {
 		border: 0.25rem solid var(--clr-accent);
-		outline: 0.25rem solid var(--clr-accent-pink);
 		padding: 2rem 1rem 1rem;
 		border-radius: 1rem;
 		display: flex;
@@ -59,7 +58,7 @@
 		align-items: baseline;
 		justify-content: center;
 		list-style: none;
-		line-height: 2rem;
+		/* line-height: 2rem; */
 	}
 
 	li > p {
