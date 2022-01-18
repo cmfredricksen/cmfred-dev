@@ -8,6 +8,7 @@
 
 	--clr-primary-dark: #033750;
 	--clr-primary-dark-transparent: #033750cc;
+	--clr-primary-dark-transparent-33: #5d748033;
 	--clr-text: #fff;
 	--clr-accent: #c9b6da;
 	--clr-accent-pink: #f01c7f;
@@ -56,6 +57,9 @@ a {
 a:hover {
 	/* text-decoration: underline; */
 	color: #f01c7f;
+}
+li {
+	font-family: var(--font-link);
 }
 
 img {

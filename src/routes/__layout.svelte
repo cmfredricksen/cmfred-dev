@@ -15,7 +15,7 @@
 <style>
 	.wrapper {
 		background-color: var(--clr-primary-dark-transparent);
-		padding: 2rem 2rem;
+		padding: 2rem 2rem 4rem;
 		max-width: 90vw;
 		margin: 0 auto;
 	}
