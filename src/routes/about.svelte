@@ -1,3 +1,11 @@
+<script lang="ts">
+	import Album from '$lib/components/album.svelte';
+</script>
+
+<svelte:head>
+	<title>About Chris F.</title>
+</svelte:head>
+
 <h2>About Me</h2>
 <div class="about">
 	<h3 class="about title">I am a Creative Problem Solver with an Eye for Design</h3>
@@ -20,6 +28,8 @@
 		they are different and yet the same.
 	</p>
 
+	<Album />
+
 	<p>
 		Cooking is another creative outlet, I cook dinner most nights for myself and my kids. I enjoy
 		trying new recipes and just making recipes up based on my cooking experience.
@@ -41,8 +51,26 @@
 		will get the job done and I will do it well!
 	</p>
 
-	<p>Thank you for visiting!</p>
-	<a href="mailto:chris@cmfred.com&subject=Website%20Inquiry">Contact Me</a>
+	<div class="hobby-container">
+		<img src="/static/images/forest.jpg" alt="" />
+
+		<ul class="hobby-list">
+			Other Hobbies:
+			<li>Birding</li>
+			<li>Hiking</li>
+			<li>Tai CHi</li>
+			<li>Reading</li>
+			<li>Geography</li>
+			<li>History</li>
+			<li>Diarist</li>
+			<li>Movies & Series</li>
+		</ul>
+
+		<div class="thank-you">
+			<p>Thank you for visiting!</p>
+			<a href="mailto:chris@cmfred.com&subject=Website%20Inquiry">Contact Me</a>
+		</div>
+	</div>
 </div>
 
 <style>
@@ -64,9 +92,46 @@
 	}
 	p {
 		margin: 0.5rem 1.5rem;
+		line-height: 1.4;
+		font-size: 1.25rem;
 	}
 
 	a {
-		margin: 0.5rem 1.5rem;
+		margin: 0.5rem 0;
+	}
+
+	.hobby-container {
+		display: grid;
+		grid-template-columns: 1.5fr 0.5fr 1.5fr;
+	}
+
+	img {
+		margin: 0 auto;
+		border-left: 3px solid var(--clr-accent-pink);
+	}
+
+	ul {
+		list-style: none;
+		color: var(--clr-accent-pink);
+		text-align: center;
+	}
+
+	li {
+		color: var(--clr-accent);
+	}
+
+	.thank-you {
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+		padding: 0 3rem;
+		border: 3px dashed var(--clr-accent-pink);
+		border-radius: 0.55555rem;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.thank-you p {
+		margin: 0;
 	}
 </style>
