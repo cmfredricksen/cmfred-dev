@@ -1,37 +1,47 @@
-<script lang="ts">
+<script>
+	import { page } from '$app/stores';
 	const links = [
 		{
 			name: 'Home',
-			href: '/'
+			path: '/'
 		},
 		{
 			name: 'About',
-			href: '/about'
+			path: '/about'
 		},
 		{
 			name: 'WebFolio',
-			href: 'https://webfolio-cmfredricksen.netlify.app',
+			path: 'https://webfolio-cmfredricksen.netlify.app',
 			target: '_blank'
 		},
 		{
 			name: 'Services',
-			href: '/services'
+			path: '/services'
 		},
 		{
 			name: 'Contact',
-			href: '/contact'
+			path: '/contact'
 		}
 	];
 </script>
 
 <nav>
 	{#each links as link}
-		<a href={link.href} target={link.target}>{link.name}</a>
+		<a
+			class:active={// @ts-ignore
+			$page.url.pathname === link.path}
+			href={link.path}
+			target={link.target}>{link.name}</a
+		>
 	{/each}
 </nav>
 
 <style>
 	a {
 		margin: 0 0.5rem;
+	}
+
+	.active {
+		text-decoration: underline var(--clr-accent-pink);
 	}
 </style>
