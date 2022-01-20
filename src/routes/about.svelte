@@ -92,8 +92,8 @@
 	}
 	p {
 		margin: 0.5rem 1.5rem;
-		line-height: 1.4;
-		font-size: 1.25rem;
+		line-height: 1.2;
+		font-size: 1.1rem;
 	}
 
 	a {
