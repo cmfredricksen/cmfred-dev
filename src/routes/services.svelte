@@ -2,6 +2,9 @@
 	import '../app.css';
 </script>
 
+<svelte:head>
+	<title>Services Offered | CMF</title>
+</svelte:head>
 <div class="services">
 	<h2>Services Offered</h2>
 

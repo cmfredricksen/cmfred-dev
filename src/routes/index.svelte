@@ -22,7 +22,7 @@
 </script>
 
 <svelte:head>
-	<title>Chris F. Dev | Home</title>
+	<title>CMF Dev | Home</title>
 </svelte:head>
 <div class="main">
 	<h3>Custom Web Solutions Tailored for Your Needs!</h3>

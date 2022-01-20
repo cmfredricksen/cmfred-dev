@@ -1,1 +1,5 @@
-<h2>Contact Us</h2>
+<svelte:head>
+	<title>Contact Me | CMF</title>
+</svelte:head>
+
+<h2>Contact Me</h2>

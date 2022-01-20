@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>About Chris F.</title>
+	<title>About Me | CMF</title>
 </svelte:head>
 
 <h2>About Me</h2>
@@ -52,7 +52,7 @@
 	</p>
 
 	<div class="hobby-container">
-		<img src="/static/images/forest.jpg" alt="" />
+		<img src="/static/images/forest.jpg" alt="Forest" title="Tranquil Morning" />
 
 		<ul class="hobby-list">
 			Other Hobbies:

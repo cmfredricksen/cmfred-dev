@@ -1,15 +1,19 @@
 <script lang="ts">
 	let images = [
-		{ name: 'Chickadee', path: '/static/images/chickadee.jpg' },
-		{ name: 'Cooking', path: '/static/images/cooking.jpg' },
-		{ name: 'Movies', path: '/static/images/movies.jpg' }
+		{ name: 'Chickadee', path: '/static/images/chickadee.jpg', title: 'chicka chickadeedeedeeee' },
+		{
+			name: 'Cooking',
+			path: '/static/images/cooking.jpg',
+			title: 'Some of my favorite basic ingredients'
+		},
+		{ name: 'Movies', path: '/static/images/movies.jpg', title: "It's movie night!" }
 	];
 </script>
 
 <div class="album">
 	<div class="container">
 		{#each images as img}
-			<img src={img.path} alt={img.name} class="album-img" />
+			<img src={img.path} alt={img.name} class="album-img" title={img.title} />
 		{/each}
 	</div>
 </div>
