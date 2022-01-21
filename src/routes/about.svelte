@@ -52,7 +52,7 @@
 	</p>
 
 	<div class="hobby-container">
-		<img src="/static/images/forest.jpg" alt="Forest" title="Tranquil Morning" />
+		<img src="/images/forest.jpg" alt="Forest" title="Tranquil Morning" />
 
 		<ul class="hobby-list">
 			Other Hobbies:
