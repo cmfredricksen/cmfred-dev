@@ -52,6 +52,10 @@
 		width: 5rem;
 	}
 
+	h1 i {
+		font-size: 48px;
+	}
+
 	ul {
 		margin: auto;
 	}
