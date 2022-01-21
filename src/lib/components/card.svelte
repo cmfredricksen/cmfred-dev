@@ -7,13 +7,14 @@
 
 <div class="card">
 	<h2>{title}</h2>
-	<h1>{icon}</h1>
+	<h1 class="card-icon"><i class="material-icons-outlined">{icon}</i></h1>
 
 	<ul>
 		{#each list as item}
 			<li>
-				<p>{icon}</p>
-				{item}
+				<!-- <p>{icon}</p> -->
+				<p><i class="material-icons-outlined">{icon}</i>{item}</p>
+				<!-- {item} -->
 			</li>
 		{/each}
 	</ul>
@@ -23,7 +24,7 @@
 <style>
 	.card {
 		border: 0.25rem solid var(--clr-accent);
-		padding: 2rem 1rem 1rem;
+		padding: 2rem 2rem 1rem;
 		border-radius: 1rem;
 		display: flex;
 		flex-direction: column;
@@ -42,9 +43,13 @@
 		border: 2px solid var(--clr-accent);
 		border-radius: 0.25rem;
 		font-size: 3rem;
-		margin: 0.5rem auto 1.5rem;
-		/* padding: 0.35rem 1rem; */
+		margin: 1.5rem auto 1rem;
 		width: 20%;
+		padding: 1rem 0.25rem 0;
+	}
+
+	.card-icon {
+		width: 5rem;
 	}
 
 	h1,
@@ -55,15 +60,21 @@
 
 	li {
 		display: flex;
-		align-items: baseline;
-		justify-content: center;
+		align-items: center;
+		justify-content: baseline;
 		list-style: none;
 		/* line-height: 2rem; */
 	}
 
 	li > p {
 		margin: 0.5rem;
+		color: var(--clr-accent);
+	}
+
+	p i {
 		color: var(--clr-accent-pink);
+		margin-right: 0.25rem;
+		font-size: 0.85rem;
 	}
 
 	.link-button {

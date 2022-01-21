@@ -4,13 +4,13 @@
 	export let cards = [
 		{
 			title: 'Creative Solutions',
-			icon: '♥',
+			icon: 'lightbulb',
 			list: ['Professional Graphic Design', 'Custom Built for You', 'Attention to Detail'],
 			link: 'services'
 		},
 		{
 			title: 'High Quality Work',
-			icon: '♦',
+			icon: 'diamond',
 			list: [
 				'Search Engine Optimization',
 				'Website Backups and Updates',
