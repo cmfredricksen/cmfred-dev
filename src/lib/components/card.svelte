@@ -52,6 +52,9 @@
 		width: 5rem;
 	}
 
+	ul {
+		margin: auto;
+	}
 	h1,
 	h2,
 	ul {
