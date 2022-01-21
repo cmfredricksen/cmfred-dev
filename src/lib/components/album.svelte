@@ -1,12 +1,12 @@
 <script lang="ts">
 	let images = [
-		{ name: 'Chickadee', path: '/static/images/chickadee.jpg', title: 'chicka chickadeedeedeeee' },
+		{ name: 'Chickadee', path: '/images/chickadee.jpg', title: 'chicka chickadeedeedeeee' },
 		{
 			name: 'Cooking',
-			path: '/static/images/cooking.jpg',
+			path: '/images/cooking.jpg',
 			title: 'Some of my favorite basic ingredients'
 		},
-		{ name: 'Movies', path: '/static/images/movies.jpg', title: "It's movie night!" }
+		{ name: 'Movies', path: '/images/movies.jpg', title: "It's movie night!" }
 	];
 </script>
 
