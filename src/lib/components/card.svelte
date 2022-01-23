@@ -6,33 +6,37 @@
 </script>
 
 <div class="card">
-	<h2>{title}</h2>
-	<h1 class="card-icon"><i class="material-icons-outlined">{icon}</i></h1>
+	<div class="container">
+		<h2>{title}</h2>
+		<h1 class="card-icon"><i class="material-icons-outlined">{icon}</i></h1>
 
-	<ul>
-		{#each list as item}
-			<li>
-				<!-- <p>{icon}</p> -->
-				<p><i class="material-icons-outlined">{icon}</i>{item}</p>
-				<!-- {item} -->
-			</li>
-		{/each}
-	</ul>
-	<a class="link-button" href="/{link}">{link}</a>
+		<ul>
+			{#each list as item}
+				<li>
+					<p><i class="material-icons-outlined">{icon}</i>{item}</p>
+				</li>
+			{/each}
+		</ul>
+		<a class="link-button" href="/{link}">{link}</a>
+	</div>
 </div>
 
 <style>
 	.card {
 		border: 0.25rem solid var(--clr-accent);
-		padding: 2rem 2rem 1rem;
+		padding: 1.5rem 0;
 		border-radius: 1rem;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
 		width: 30vw;
-		margin: 0 2rem;
+		max-width: 325px;
+		min-width: 275px;
 		background-color: var(--clr-primary-dark);
 		box-shadow: 2px 2px 3px black;
+	}
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		flex: 1;
 	}
 
 	h1 {
@@ -70,7 +74,6 @@
 		align-items: center;
 		justify-content: baseline;
 		list-style: none;
-		/* line-height: 2rem; */
 	}
 
 	li > p {
