@@ -6,7 +6,7 @@
 </script>
 
 <header>
-	<h2><a href="/">CM FREDRICKSEN Development</a></h2>
+	<h2 class="title"><a href="/">CM FREDRICKSEN Development</a></h2>
 	<h2 class="icon" on:click={sayHello}>&#10053</h2>
 	<Nav />
 </header>
@@ -22,6 +22,7 @@
 	h2 {
 		margin: 0;
 	}
+
 	.icon {
 		background-color: var(--clr-accent-pink);
 		color: var(--clr-text);
@@ -40,5 +41,24 @@
 		opacity: 100%;
 		text-shadow: 1px 1px 1px var(--clr-accent-pink);
 		border: 2px solid var(--clr-accent-pink);
+	}
+
+	@media (max-width: 768px) {
+		header {
+			display: block;
+			padding: 1rem 0;
+		}
+
+		.title {
+			text-align: center;
+		}
+
+		h2.icon {
+			text-align: center;
+			padding: 0.25rem 0;
+			font-size: 1rem;
+			border-radius: 0.5rem;
+			margin: 1.5rem 0;
+		}
 	}
 </style>
