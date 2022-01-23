@@ -74,6 +74,14 @@
 </div>
 
 <style>
+	.about {
+		background: var(--clr-primary-dark);
+		border-radius: 0.5rem;
+	}
+
+	.title {
+		line-height: 1rem;
+	}
 	h2 {
 		color: var(--clr-accent-pink);
 		text-align: center;
@@ -85,10 +93,6 @@
 	div {
 		padding: 1rem 0 2rem;
 		margin-top: 1.5rem;
-	}
-	.about {
-		background: var(--clr-primary-dark);
-		border-radius: 0.5rem;
 	}
 	p {
 		margin: 0.5rem 1.5rem;
@@ -133,5 +137,25 @@
 
 	.thank-you p {
 		margin: 0;
+	}
+
+	@media (max-width: 768px) {
+		.hobby-container {
+			display: flex;
+			flex-direction: column;
+			flex: 1;
+			justify-content: space-evenly;
+			align-items: center;
+		}
+		img {
+			max-width: 100%;
+			margin-bottom: 1rem;
+			border-right: 2px solid var(--clr-accent-pink);
+		}
+
+		.thank-you {
+			margin-top: 1rem;
+			padding: 2rem 3rem;
+		}
 	}
 </style>

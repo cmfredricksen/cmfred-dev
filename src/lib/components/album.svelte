@@ -33,4 +33,11 @@
 		max-width: 100%;
 		height: auto;
 	}
+
+	@media (max-width: 768px) {
+		.container {
+			display: flex;
+			flex-direction: column;
+		}
+	}
 </style>

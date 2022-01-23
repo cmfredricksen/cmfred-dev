@@ -129,6 +129,16 @@
 			margin: 0 1rem;
 		}
 
+		.intro-text {
+			border-bottom: 3px solid var(--clr-accent-pink);
+			padding-bottom: 01.25rem;
+			margin-left: 0.5rem;
+		}
+
+		.body-text {
+			margin-left: 0.5rem;
+		}
+
 		.img-div {
 			/* display: none; */
 			width: 100%;
