@@ -84,6 +84,18 @@
 		font-style: oblique;
 	}
 
+	.img-div {
+		background-image: url('/static/images/pexels-castorly-stock-4065748.jpg');
+		background-repeat: no-repeat;
+		display: flex;
+		height: 150px;
+		background-size: 100%;
+		background-position-x: left;
+		background-position-y: center;
+		border-radius: 0.5rem;
+		margin: 0 auto 2rem;
+		width: 90%;
+	}
 	.icon-bar {
 		width: 100%;
 		margin: 0 auto;
@@ -98,33 +110,34 @@
 
 	.icon-bar i {
 		font-size: 4rem;
-		/* color: var(--clr-accent-pink); */
 	}
 	.body-text {
-		/* columns: 2; */
-		/* column-gap: 2rem; */
-		/* text-align: justify; */
 		font-size: 1.25rem;
 		margin: 2rem 0;
-		/* padding: 2rem 0; */
-	}
-
-	.img-div {
-		background-image: url('/static/images/pexels-castorly-stock-4065748.jpg');
-		background-repeat: no-repeat;
-		display: flex;
-		height: 150px;
-		background-size: 100%;
-		background-position-x: left;
-		background-position-y: center;
-		border-radius: 0.5rem;
-		margin: 0 auto 2rem;
-		width: 90%;
 	}
 
 	.card-container {
 		margin: 1rem auto;
 		display: flex;
 		justify-content: space-evenly;
+	}
+
+	@media (max-width: 768px) {
+		h3 {
+			font-size: 2.5rem;
+			line-height: 1;
+			margin: 0 1rem;
+		}
+
+		.img-div {
+			/* display: none; */
+			width: 100%;
+		}
+
+		.card-container {
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+		}
 	}
 </style>

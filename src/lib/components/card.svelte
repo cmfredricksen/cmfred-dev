@@ -102,4 +102,10 @@
 		color: var(--clr-accent-pink);
 		background-color: var(--clr-primary-dark);
 	}
+
+	@media (max-width: 768px) {
+		.card {
+			margin-bottom: 1.25rem;
+		}
+	}
 </style>

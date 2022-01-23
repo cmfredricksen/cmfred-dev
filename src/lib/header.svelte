@@ -47,6 +47,8 @@
 		header {
 			display: block;
 			padding: 1rem 0;
+			position: sticky;
+			top: 0;
 		}
 
 		.title {
@@ -57,7 +59,7 @@
 			text-align: center;
 			padding: 0.25rem 0;
 			font-size: 1rem;
-			border-radius: 0.5rem;
+			border-radius: 0;
 			margin: 1.5rem 0;
 		}
 	}

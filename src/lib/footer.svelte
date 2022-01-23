@@ -21,4 +21,14 @@
 	a {
 		font-size: 1rem;
 	}
+
+	@media (max-width: 768px) {
+		footer {
+			padding: 1rem 0;
+			/* max-width: 100vw; */
+		}
+		p {
+			font-size: 1.25rem;
+		}
+	}
 </style>
