@@ -19,6 +19,11 @@
 
 		<label for="message">Message:</label>
 		<textarea name="message" id="message" cols="30" rows="10" />
+
+		<input type="hidden" name="_next" value="https://cmfred-dev.netlify.app/thanks" />
+		<input type="hidden" name="_captcha" value="false" />
+		<input type="hidden" name="_subject" value="CM Fred Dev" />
+
 		<button type="submit">Send</button>
 	</form>
 	<div class="text-box">
