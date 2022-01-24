@@ -28,7 +28,7 @@
 	</form>
 	<div class="text-box">
 		<h2>Thank You for stopping by!</h2>
-		<p>
+		<p class="top">
 			Please contact me if you want to get your business online. I can help you each step of the
 			way, from planning and design to development and deployment!
 		</p>
@@ -38,7 +38,7 @@
 			<li>Built for a Great User Experience</li>
 			<li>Developed to be Fast</li>
 		</ul>
-		<p>
+		<p class="bottom">
 			I will handle all of the technology so you don't have to! You can focus on your primary
 			business, I will take care of your website.
 		</p>
@@ -56,7 +56,6 @@
 <style>
 	.contact {
 		display: flex;
-		/* justify-content: space-between; */
 	}
 	form {
 		display: flex;
@@ -64,13 +63,10 @@
 		background-color: var(--clr-primary-dark-transparent);
 		width: 100%;
 		max-width: 600px;
-		/* align-items: center; */
 		padding: 1rem 1.5rem 2rem;
-		/* justify-content: center; */
 		border-radius: 1rem;
 		border: 2px solid var(--clr-accent);
 		outline: 1px solid var(--clr-accent-pink);
-		/* margin: 1rem 0; */
 	}
 
 	h2 {
@@ -159,5 +155,46 @@
 
 	.icon-bar i {
 		font-size: 3rem;
+	}
+
+	@media (max-width: 768px) {
+		.contact {
+			display: block;
+		}
+
+		.text-box {
+			width: unset;
+			padding: 0 0.25rem;
+			margin-top: 2.5rem;
+		}
+
+		p {
+			font-size: 1.25rem;
+			padding-bottom: 2rem;
+		}
+
+		p.top {
+			border-bottom: 5px solid var(--clr-accent-pink);
+		}
+
+		p.bottom {
+			border-top: 5px solid var(--clr-accent-pink);
+			padding-top: 2rem;
+		}
+
+		ul {
+			outline: 2px solid var(--clr-accent);
+			margin: 2rem 1.5rem;
+			text-align: start;
+			padding: 1rem 2.5rem;
+		}
+
+		li {
+			margin: 0.25rem 0;
+		}
+
+		li::before {
+			margin-left: -1.25rem;
+		}
 	}
 </style>
