@@ -29,4 +29,17 @@
 		color: var(--clr-accent-pink);
 		font-size: 2rem;
 	}
+
+	@media (max-width: 768px) {
+		.thank-you {
+			flex: 1;
+			justify-content: space-between;
+			height: 100%;
+		}
+		p {
+			text-align: center;
+			line-height: 2.5rem;
+			margin: 1.5rem 1rem;
+		}
+	}
 </style>
