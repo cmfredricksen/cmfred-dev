@@ -85,7 +85,7 @@
 	}
 
 	.img-div {
-		background-image: url('/static/images/pexels-castorly-stock-4065748.jpg');
+		background-image: url('/static/images/keyboard.jpg');
 		background-repeat: no-repeat;
 		display: flex;
 		height: 150px;

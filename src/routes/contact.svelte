@@ -3,8 +3,11 @@
 </svelte:head>
 
 <div class="contact">
-	<form action="" method="post">
-		<h2>Contact Me</h2>
+	<form action="https://formsubmit.co/chris@cmfred.com" method="post">
+		<h2>
+			Contact Me
+			<i class="material-icons-outlined">mail</i>
+		</h2>
 		<label for="name">Name:</label>
 		<input type="text" name="name" id="name" placeholder="Name" required />
 
@@ -15,21 +18,33 @@
 		<input type="tel" name="phone" id="phone" placeholder="Phone Number" />
 
 		<label for="message">Message:</label>
-		<textarea
-			name="message"
-			id="message"
-			cols="30"
-			rows="10"
-			placeholder="Send me a message, I will respond as soon as possible."
-		/>
+		<textarea name="message" id="message" cols="30" rows="10" />
+		<button type="submit">Send</button>
 	</form>
-	<div class="graphic">
-		<i class="material-icons-outlined">home</i>
-		<i class="material-icons-outlined">mail</i>
-		<i class="material-icons-outlined">favorite</i>
-		<i class="material-icons-outlined">public</i>
-		<i class="material-icons-outlined">face</i>
-		<i class="material-icons-outlined">thumb_up</i>
+	<div class="text-box">
+		<h2>Thank You for stopping by!</h2>
+		<p>
+			Please contact me if you want to get your business online. I can help you each step of the
+			way, from planning and design to development and deployment!
+		</p>
+		<ul>
+			<li>Professional Graphic Design</li>
+			<li>Custom Color Scheme</li>
+			<li>Built for a Great User Experience</li>
+			<li>Developed to be Fast</li>
+		</ul>
+		<p>
+			I will handle all of the technology so you don't have to! You can focus on your primary
+			business, I will take care of your website.
+		</p>
+
+		<div class="icon-bar">
+			<i class="material-icons-outlined">terminal</i>
+			<i class="material-icons-outlined">store</i>
+			<i class="material-icons-outlined">rocket_launch</i>
+			<i class="material-icons-outlined">computer</i>
+			<i class="material-icons-outlined">desktop_windows</i>
+		</div>
 	</div>
 </div>
 
@@ -43,6 +58,7 @@
 		flex-direction: column;
 		background-color: var(--clr-primary-dark-transparent);
 		width: 100%;
+		max-width: 600px;
 		/* align-items: center; */
 		padding: 1rem 1.5rem 2rem;
 		/* justify-content: center; */
@@ -50,6 +66,12 @@
 		border: 2px solid var(--clr-accent);
 		outline: 1px solid var(--clr-accent-pink);
 		/* margin: 1rem 0; */
+	}
+
+	h2 {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 	}
 
 	label {
@@ -74,7 +96,8 @@
 	}
 
 	textarea {
-		padding-left: 0.5rem;
+		font-family: var(--font-text);
+		padding: 0.5rem;
 		border-radius: 0.5rem;
 		background-color: var(--clr-accent);
 	}
@@ -85,7 +108,51 @@
 		font-size: 1rem;
 	}
 
-	.graphic {
+	button {
+		width: 50px;
+		line-height: 2;
+		background-color: var(--clr-accent-pink);
+		border: none;
+		color: var(--clr-accent);
+		font-family: var(--font-link);
+		font-weight: bold;
+		margin: 1rem auto;
+		padding: 0 0.5rem;
+		border-radius: 0.25rem;
+	}
+
+	.text-box {
 		width: 50%;
+		padding: 0 2rem;
+	}
+
+	.text-box h2 {
+		margin-bottom: 1rem;
+	}
+
+	ul {
+		list-style: none;
+		margin: 1rem 2rem;
+	}
+
+	li::before {
+		content: '\2745';
+		color: var(--clr-accent-pink);
+		margin-right: 0.25rem;
+		font-weight: bold;
+	}
+
+	.icon-bar {
+		text-align: center;
+		background-color: var(--clr-primary-dark);
+		border: 5px dotted var(--clr-accent-pink);
+		opacity: 80%;
+		margin: 2rem auto;
+		border-radius: 0.5rem;
+		padding: 0.5rem 0;
+	}
+
+	.icon-bar i {
+		font-size: 3rem;
 	}
 </style>

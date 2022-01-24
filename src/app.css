@@ -25,7 +25,7 @@ body {
 	background-color: var(--clr-primary-transparent);
 	color: var(--clr-accent);
 	color: var(--clr-text);
-	background-image: url('/static/images/pexels-pixabay-220182.jpg');
+	background-image: url('/static/images/brickwall.jpg');
 	background-size: 100%;
 	background-repeat: repeat-y;
 }
