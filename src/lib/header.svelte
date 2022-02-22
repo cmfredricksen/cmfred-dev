@@ -6,6 +6,7 @@
 </script>
 
 <header>
+	<a href="#wrapper" class="skip-nav-link">skip navigation</a>
 	<h2 class="title"><a href="/">CM FREDRICKSEN Development</a></h2>
 	<h2 class="icon" on:click={sayHello}>&#10053</h2>
 	<Nav />
@@ -19,6 +20,17 @@
 		background-color: var(--clr-primary-dark);
 		padding: 1rem;
 	}
+
+	.skip-nav-link {
+		position: absolute;
+		transform: translateY(-320%);
+		translate: transform 325ms ease-in;
+	}
+
+	.skip-nav-link:focus {
+		transform: translateY(-170%);
+	}
+
 	h2 {
 		margin: 0;
 	}

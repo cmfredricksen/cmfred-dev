@@ -6,7 +6,7 @@
 
 <Header />
 
-<div class="wrapper">
+<div class="wrapper" id="wrapper">
 	<slot />
 </div>
 
