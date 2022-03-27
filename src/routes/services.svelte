@@ -48,7 +48,7 @@
 <style>
 	h2 {
 		text-align: center;
-		color: var(--clr-accent-pink);
+		color: var(--clr-accent);
 	}
 	ul {
 		list-style: none;
@@ -63,7 +63,7 @@
 
 	li::before {
 		content: '\2745';
-		color: var(--clr-accent-pink);
+		color: var(--clr-text);
 		padding-right: 0.5rem;
 		font-size: 1.5rem;
 	}

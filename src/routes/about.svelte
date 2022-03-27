@@ -83,7 +83,7 @@
 		line-height: 1rem;
 	}
 	h2 {
-		color: var(--clr-accent-pink);
+		color: var(--clr-accent);
 		text-align: center;
 	}
 	h3 {
@@ -116,7 +116,7 @@
 
 	ul {
 		list-style: none;
-		color: var(--clr-accent-pink);
+		color: var(--clr-text);
 		text-align: center;
 	}
 

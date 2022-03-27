@@ -12,7 +12,7 @@
 	--clr-primary-dark-transparent-33: #5d748033;
 	--clr-text: #fff;
 	--clr-accent: #c9b6da;
-	--clr-accent-pink: #f01c7f;
+	--clr-accent-pink: #a80f57;
 }
 
 * {
@@ -40,7 +40,8 @@ h3,
 h4,
 h5 {
 	font-family: var(--font-accent);
-	color: #f01c7f;
+	/* color: #f01c7f; */
+	color: var(--clr-accent);
 	font-size: 2rem;
 	font-weight: 500;
 }

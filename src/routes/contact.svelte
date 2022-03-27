@@ -138,7 +138,7 @@
 
 	li::before {
 		content: '\2745';
-		color: var(--clr-accent-pink);
+		color: var(--clr-accent);
 		margin-right: 0.25rem;
 		font-weight: bold;
 	}
